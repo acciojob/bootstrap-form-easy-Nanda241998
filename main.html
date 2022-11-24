@@ -1,16 +1,288 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+<!--div class="container"
+  <h2>Internship form</h2>
+  <form class="form-inline" action="/action_page.php">
+    <div class="form-group">
+        <p>First Name</p>
+      
+      <input type="email" class="form-control" id="" placeholder="     " name="">&nbsp&nbsp
+    </div>
+    <div class="form-group">
+    <p>Last Name</p>
+      <input type="password" class="form-control" id="pwd" placeholder="" name="">&nbsp&nbsp
+    </div>
+    <div class="form-group">
+        <p>E-mail Address</p>
+      
+        <input type="email" class="form-control" id="email" placeholder="xyz@abc.com" name="">&nbsp&nbsp
+      </div>
+    
+  </form>
+  <form class="form-inline" action="/action_page.php">
+    <div class="form-group">
+        <p>College</p>
+      
+      <input type="email" class="form-control" id="email" placeholder="" name="">&nbsp&nbsp
+    </div>
+    <div class="form-group">
+    <p>Graduation Year</p>
+    <div class="dropdown">
+        <span class="caret"></span></button>
+      <input type="password" class="form-control" id="pwd" placeholder="Choose..." name="">&nbsp&nbsp
+      
+        
+        
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2020</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2021</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2022</a></li>
+          
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2023</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="form-group">
+        <p>Roll No</p>
+      
+        <input type="email" class="form-control" id="email" placeholder="" name="">&nbsp&nbsp
+      </div>
+    
+  </form>
+  <div class="checkbox">
+    <label><input type="checkbox" name="remember"> Agree terms and conditions</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+div-->
+<div class="container">
+    <h2><center>Internship form</center></h2>
+    
+    <form>
+        <div class="mb-3 mt-3">
+      <div class="form-group row">
+        <div class="col-xs-4">
+          <label for="ex1">First Name</label>
+          <input class="form-control" id="ex1" type="text">
+        </div>
+        <div class="col-xs-4">
+          <label for="ex2">Last name</label>
+          <input class="form-control" id="ex2" type="text">
+        </div>
+        <div class="col-xs-4">
+          <label for="ex3">Email-Address</label>
+          <input type="email" class="form-control" id="email" placeholder="xyz@abc.com" name="">
+          
+        </div>
+      </div>
+      
+      <div class="form-group row">
+        <div class="col-xs-6">
+          <label for="ex1">College</label>
+          <input class="form-control" id="ex1" type="text">
+        </div>
+        <div class="col-xs-3">
+          <label for="ex2">Graduation year</label>
+          <input type="email" class="form-control" id="email" placeholder="" name="">
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>         
+        </div>
+        <div class="col-xs-3">
+          <label for="ex3">Roll no</label>
+          <input class="form-control" id="ex3" type="text">
+        </div>
+      </div>
+    </form>
+    <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Agree terms and conditions</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Form</button>
+  </div >
+  
+    <h2><center>Internship form</center></h2>
+      <div class="form-group row">
+        <div class="col-xs-4">
+          <label for="ex1">First Name</label>
+         
+          <input class="form-control" id="ex1" type="text">
+          
+      <div class="invalid-feedback">First name required</div>
+        </div>
+        <div class="col-xs-4">
+          <label for="ex2">Last name</label>
+          <input class="form-control" id="ex2" type="text">
+          <div class="invalid-feedback">Last name required</div>
+        </div>
+        <div class="col-xs-4">
+          <label for="ex3">Email-Address</label>
+          <input type="email" class="form-control" id="email" placeholder="xyz@abc.com" name="">
+          <div class="invalid-feedback">Email required</div>
+        </div>
+      </div>
+        <div class="form-group row">
+        <div class="col-xs-6">
+          <label for="ex1">College</label>
+          <input class="form-control" id="ex1" type="text">
+          <div class="invalid-feedback">Please provide valid college</div>
+        </div>
+        <div class="col-xs-3">
+          <label for="ex2">Graduation year</label>
+          <input class="form-control" id="ex2" type="text">
+          <div class="invalid-feedback">Please select a valid Graduation year</div> 
+        </div>
+        <div class="col-xs-3">
+          <label for="ex3">Roll no</label>
+          <input class="form-control" id="ex3" type="text">
+          <div class="invalid-feedback">Please provide a valid Roll No</div>
+       </div>
+      </div>
+    </form>
+    </form>
+    </form>
+    <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Agree terms and conditions</label>
+        <p>you must agree before submitting</p>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Form</button>  
+    </div>
+    <!--div class="container-fluid">
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefaultUsername" class="form-label">Username</label>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+          <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationDefault03" class="form-label">Graduation year</label>
+        <input type="text" class="form-control" id="validationDefault03" required>
+      </div>
+      <div class="col-md-3">
+       
+        <select class="form-select" id="validationDefault04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault05" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="validationDefault05" required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Agree to terms and conditions
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+    <div class="container-fluid"></div>
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="validationServer01" class="form-label">First name</label>
+        <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationServer02" class="form-label">Last name</label>
+        <input type="text" class="form-control is-valid" id="validationServer02" value="" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationServerUsername" class="form-label">Username</label>
+        <div class="input-group has-validation">
+          
+          <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+            Please choose a username.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationServer03" class="form-label">Email-Address</label>
+        <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+        <div id="validationServer03Feedback" class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationServer04" class="form-label">State</label>
+        <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+          <option selected disabled value="">Choose...</option>
+          <option>...</option>
+        </select>
+        <div id="validationServer04Feedback" class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationServer05" class="form-label">Roll No</label>
+        <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+        <div id="validationServer05Feedback" class="invalid-feedback">
+          Please provide a Roll No
+        </div>
+      </div>
+    
+      <div class="container-fluid">
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+          <label class="form-check-label" for="invalidCheck3">
+            Agree to terms and conditions
+          </label>
+          <div id="invalidCheck3Feedback" class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </div>
+  </div>
+</div-->
+    </form>
 </body>
-
 </html>
+
+
+        
+
+
+
+
+
+
+
+
+
+
